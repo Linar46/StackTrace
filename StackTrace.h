@@ -2,6 +2,7 @@
 #include <wx/stackwalk.h>
 #include <vector>
 
+
 class wxStackTrace final : public wxStackWalker
 {
 public:
