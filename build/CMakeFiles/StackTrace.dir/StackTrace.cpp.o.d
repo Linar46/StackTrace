@@ -294,7 +294,11 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
  /usr/include/c++/13/bits/ostream.tcc \
  /usr/include/c++/13/bits/istream.tcc \
- /usr/include/c++/13/bits/sstream.tcc \
+ /usr/include/c++/13/bits/sstream.tcc /usr/include/c++/13/fstream \
+ /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc \
  /home/linar/src/wxWidgets-3.2.8/include/wx/filename.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/datetime.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/anystr.h \
@@ -307,4 +311,8 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /home/linar/src/wxWidgets-3.2.8/include/wx/file.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/convauto.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/stdpaths.h \
- /home/linar/src/wxWidgets-3.2.8/include/wx/unix/stdpaths.h
+ /home/linar/src/wxWidgets-3.2.8/include/wx/unix/stdpaths.h \
+ /usr/include/c++/13/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h
