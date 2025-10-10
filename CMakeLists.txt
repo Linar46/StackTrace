@@ -4,6 +4,7 @@ project(StackTrace)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Always build with debug symbols and no optimization for readable stack traces
 set(CMAKE_BUILD_TYPE Debug)
