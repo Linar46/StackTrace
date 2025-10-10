@@ -35,7 +35,7 @@ public:
     std::string line;
     while (std::getline(maps, line))
     {
-      if (line.find(" r-x") != std::string::npos)
+      if (line.find("r") != std::string::npos)
       {
         std::stringstream ss(line);
         std::string addrRange;
@@ -64,29 +64,30 @@ public:
     return output.empty() ? "<unknown>" : output[0];
   }
 
-  wxString ToString() const noexcept
-  {
-    wxString result;
-    for (const auto &frame : frames)
-    {
-      result += wxString::Format("Frame %lu: %s\n",
-                                 (unsigned long)frame.GetLevel(),
-                                 frame.GetName());
-      if (needFileInfo)
-      {
-        if (!frame.GetFileName().empty())
-          result += wxString::Format("  at %s:%lu\n",
-                                     frame.GetFileName(),
-                                     (unsigned long)frame.GetLine());
-      }
-    }
-    return result;
-  }
+  // wxString ToString() const noexcept
+  // {
+  //   wxString result;
+  //   for (const auto &frame : frames)
+  //   {
+  //     result += wxString::Format("Frame %lu: %s\n",
+  //                                (unsigned long)frame.GetLevel(),
+  //                                frame.GetName());
+  //     if (needFileInfo)
+  //     {
+  //       if (!frame.GetFileName().empty())
+  //         result += wxString::Format("  at %s:%lu\n",
+  //                                    frame.GetFileName(),
+  //                                    (unsigned long)frame.GetLine());
+  //     }
+  //   }
+  //   return result;
+  // }
 
 private:
   void OnStackFrame(const wxStackFrame &frame) override
   {
     frames.push_back(frame);
+    wxPrintf("Captured frame %lu: %s\n", (unsigned long)frame.GetLevel(), ResolveSymbol((void *)frame.GetAddress()));
   }
 
   StackFrameCollection frames;

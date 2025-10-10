@@ -5,8 +5,8 @@
 void method3()
 {
     wxStackTrace trace(true);
-    wxPuts("Stack Trace:");
-    wxPuts(trace.ToString());
+    // wxPuts("Stack Trace:");
+    // wxPuts(trace.ToString());
 }
 
 void method2() {
