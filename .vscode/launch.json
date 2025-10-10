@@ -9,7 +9,10 @@
       "args": [],
       "stopAtEntry": true,
       "cwd": "${workspaceFolder}",
-      "environment": [],
+      "environment": [
+        { "name": "DEBUGINFOD_URLS", "value": "https://debuginfod.ubuntu.com" },
+        { "name": "DEBUGINFOD_PROGRESS", "value": "1" }
+      ],
       "externalConsole": false,
       "MIMode": "gdb",
       "setupCommands": [

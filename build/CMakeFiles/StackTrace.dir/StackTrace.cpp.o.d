@@ -183,4 +183,128 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /home/linar/src/wxWidgets-3.2.8/include/wx/init.h \
  /home/linar/projects/test2/StackTrace.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/stackwalk.h \
- /home/linar/src/wxWidgets-3.2.8/include/wx/unix/stackwalk.h
+ /home/linar/src/wxWidgets-3.2.8/include/wx/unix/stackwalk.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/utils.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/object.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/memory.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/msgout.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/xti.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/rtti.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/flags.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/xti2.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/list.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/vector.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/scopeguard.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/except.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/meta/movable.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/meta/pod.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/meta/if.h \
+ /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
+ /usr/include/c++/13/bits/streambuf_iterator.h \
+ /usr/include/c++/13/streambuf /usr/include/c++/13/bits/ios_base.h \
+ /usr/include/c++/13/ext/atomicity.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+ /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+ /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+ /usr/include/c++/13/bits/locale_classes.h \
+ /usr/include/c++/13/bits/locale_classes.tcc \
+ /usr/include/c++/13/system_error \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
+ /usr/include/c++/13/stdexcept /usr/include/c++/13/exception \
+ /usr/include/c++/13/bits/exception_ptr.h \
+ /usr/include/c++/13/bits/cxxabi_init_exception.h \
+ /usr/include/c++/13/bits/nested_exception.h \
+ /usr/include/c++/13/bits/streambuf.tcc \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/filefn.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/arrstr.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/dynarray.h \
+ /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/dirent.h \
+ /usr/include/x86_64-linux-gnu/bits/dirent.h \
+ /usr/include/x86_64-linux-gnu/bits/dirent_ext.h /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/linux/falloc.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/hashmap.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/versioninfo.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/meta/implicitconversion.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/gdicmn.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/math.h \
+ /usr/include/c++/13/math.h /usr/include/c++/13/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/limits \
+ /usr/include/c++/13/tr1/gamma.tcc \
+ /usr/include/c++/13/tr1/special_function_util.h \
+ /usr/include/c++/13/tr1/bessel_function.tcc \
+ /usr/include/c++/13/tr1/beta_function.tcc \
+ /usr/include/c++/13/tr1/ell_integral.tcc \
+ /usr/include/c++/13/tr1/exp_integral.tcc \
+ /usr/include/c++/13/tr1/hypergeometric.tcc \
+ /usr/include/c++/13/tr1/legendre_function.tcc \
+ /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/13/tr1/poly_hermite.tcc \
+ /usr/include/c++/13/tr1/poly_laguerre.tcc \
+ /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/mousestate.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/kbdstate.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/longlong.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/platinfo.h \
+ /usr/include/c++/13/sstream /usr/include/c++/13/istream \
+ /usr/include/c++/13/ios /usr/include/c++/13/bits/basic_ios.h \
+ /usr/include/c++/13/bits/locale_facets.h /usr/include/c++/13/cwctype \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
+ /usr/include/c++/13/bits/locale_facets.tcc \
+ /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
+ /usr/include/c++/13/bits/ostream.tcc \
+ /usr/include/c++/13/bits/istream.tcc \
+ /usr/include/c++/13/bits/sstream.tcc \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/filename.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/datetime.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/anystr.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/intl.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/localedefs.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/translation.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/language.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/scopedptr.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/checkeddelete.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/file.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/convauto.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/stdpaths.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/unix/stdpaths.h

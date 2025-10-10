@@ -1,7 +1,10 @@
 #pragma once
 #include <wx/stackwalk.h>
 #include <vector>
-
+#include <wx/utils.h> // for wxExecute
+#include <sstream>
+#include <wx/filename.h>
+#include <wx/stdpaths.h>
 
 class wxStackTrace final : public wxStackWalker
 {
@@ -9,16 +12,14 @@ public:
   using StackFrameCollection = std::vector<wxStackFrame>;
   using SizeType = typename StackFrameCollection::size_type;
 
-  wxStackTrace() noexcept : wxStackTrace(1, false) {}
-  wxStackTrace(const wxStackTrace &) noexcept = default;
-  wxStackTrace(wxStackTrace &&) noexcept = default;
+  // wxStackTrace() noexcept : wxStackTrace(1, false) {}
   explicit wxStackTrace(bool needFileInfo) noexcept : wxStackTrace(1, needFileInfo) {}
-  explicit wxStackTrace(size_t skipFrames) noexcept : wxStackTrace{skipFrames + 1, false} {}
+
   wxStackTrace(SizeType skipFrames, bool needFileInfo) noexcept : wxStackWalker{}, needFileInfo{needFileInfo}
   {
     try
     {
-      Walk(skipFrames + internalOffset);
+      Walk(skipFrames + 0);
     }
     catch (...)
     {
@@ -26,64 +27,50 @@ public:
     }
   }
 
-  SizeType FrameCount() const noexcept
+  wxString ResolveSymbol(void *address)
   {
-    return frames.size();
+    // wxString cmd = wxString::Format("addr2line -e %s -f -p %p", wxGetFullModuleName(), address);
+    wxString exePath = wxStandardPaths::Get().GetExecutablePath();
+    wxString cmd = wxString::Format("addr2line -e %s -f -p %p", exePath, address);
+    wxArrayString output;
+    wxExecute(cmd, output, wxEXEC_SYNC);
+    if (!output.empty())
+      return output[0];
+    return "<unknown>";
   }
-
-  const wxStackFrame &GetFrame(SizeType index) const noexcept
-  {
-    static auto emptyStackFrame = wxStackFrame{};
-    if (frames.size() == 0)
-      return emptyStackFrame;
-    if (index > frames.size() - 1)
-      index = frames.size() - 1;
-    return frames[index];
-  }
-
-  const StackFrameCollection &GetFrames() const noexcept
-  {
-    return frames;
-  }
-
-  // wxString ToString() const noexcept { // need to fix this and <filename unknown> issue possibly with configs 
-  //   auto result = wxString {};
-  //   for (const auto& frame : frames)
-  //     result += wxString::Format(needFileInfo ? "   at %s in %s:line %lu\n" : "   at %s\n", frame.GetName(), frame.GetFileName().empty() ? "<filename unknown>" : frame.GetFileName(), frame.GetLine());
-  //   return result;
-  // }
-
   wxString ToString() const noexcept
   {
     wxString result;
     for (const auto &frame : frames)
     {
+      result += wxString::Format("Frame %lu: %s\n",
+                                 (unsigned long)frame.GetLevel(),
+                                 frame.GetName());
       if (needFileInfo)
       {
-        result += wxString::Format(
-            "   at %s in %s:line %lu\n",
-            frame.GetName(),
-            frame.GetFileName().empty() ? "<filename unknown>" : frame.GetFileName(),
-            static_cast<unsigned long>(frame.GetLine()));
-      }
-      else
-      {
-        result += wxString::Format("   at %s\n", frame.GetName());
+        if (!frame.GetFileName().empty())
+          result += wxString::Format("  at %s:%lu\n",
+                                     frame.GetFileName(),
+                                     (unsigned long)frame.GetLine());
       }
     }
     return result;
   }
 
-  wxStackTrace &operator=(const wxStackTrace &) noexcept = default;
-  wxStackTrace &operator=(wxStackTrace &&) noexcept = default;
-
 private:
+  // void OnStackFrame(const wxStackFrame &frame) override
+  // {
+  //   frames.push_back(frame);
+  // }
   void OnStackFrame(const wxStackFrame &frame) override
   {
     frames.push_back(frame);
+    // Optionally print right away for debugging
+    wxPrintf("Captured frame %lu: %s\n",
+             (unsigned long)frame.GetLevel(),
+             ResolveSymbol((void *)frame.GetAddress()));
   }
 
-  static constexpr SizeType internalOffset = 3;
   StackFrameCollection frames;
   bool needFileInfo = false;
 };

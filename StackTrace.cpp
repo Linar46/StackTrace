@@ -2,11 +2,11 @@
 #include <wx/init.h>
 #include "StackTrace.h"
 
-void method3() {
-  wxPrintf("Stack Trace :\n");
-  auto stack = wxStackTrace {true};
-  wxPrintf("%s", stack.ToString()); /// need fix this
-  // wxPuts(stack.ToString());
+void method3()
+{
+    wxStackTrace trace(true);
+    wxPuts("Stack Trace:");
+    wxPuts(trace.ToString());
 }
 
 void method2() {
