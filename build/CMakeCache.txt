@@ -20,14 +20,15 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//No help, variable specified on the command line.
+//Choose the type of build, options are: None Debug Release RelWithDebInfo
+// MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++
+//CXX compiler
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -52,8 +53,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc
+//C compiler
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -96,8 +97,8 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//No help, variable specified on the command line.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
+//Enable/Disable output of compile commands during generation.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/linar/projects/test2/build/CMakeFiles/pkgRedirects
@@ -223,14 +224,14 @@ StackTrace_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 StackTrace_SOURCE_DIR:STATIC=/home/linar/projects/test2
 
-//Location of wxWidgets library configuration provider binary (wx-config).
-wxWidgets_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/wx-config
+//Path to wx-config from a local wxWidgets build
+wxWidgets_CONFIG_EXECUTABLE:FILEPATH=/home/linar/src/wxWidgets-3.2.8/buildgtk/wx-config
 
 //Use debug build?
 wxWidgets_USE_DEBUG:BOOL=OFF
 
 //Location of wxWidgets resource file compiler binary (wxrc)
-wxWidgets_wxrc_EXECUTABLE:FILEPATH=/usr/bin/wxrc
+wxWidgets_wxrc_EXECUTABLE:FILEPATH=/usr/local/bin/wxrc
 
 
 ########################
@@ -383,7 +384,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding wxWidgets
-FIND_PACKAGE_MESSAGE_DETAILS_wxWidgets:INTERNAL=[-L/usr/lib/x86_64-linux-gnu;-pthread;;;-lwx_gtk3u_core-3.2;-lwx_baseu-3.2][/usr/lib/x86_64-linux-gnu/wx/include/gtk3-unicode-3.2;/usr/include/wx-3.2][v3.2.4()]
+FIND_PACKAGE_MESSAGE_DETAILS_wxWidgets:INTERNAL=[-L/home/linar/src/wxWidgets-3.2.8/buildgtk/lib;-pthread;;;/home/linar/src/wxWidgets-3.2.8/buildgtk/lib/libwx_gtk3u_core-3.2.a;/home/linar/src/wxWidgets-3.2.8/buildgtk/lib/libwx_baseu-3.2.a;-lgthread-2.0;-pthread;-lX11;-lSM;-lxkbcommon;-lgtk-3;-lgdk-3;-lpangocairo-1.0;-latk-1.0;-lcairo-gobject;-lcairo;-lgdk_pixbuf-2.0;-lgio-2.0;-lXtst;-lpangoft2-1.0;-lpango-1.0;-lgobject-2.0;-lglib-2.0;-lharfbuzz;-lfontconfig;-lfreetype;-lwxscintilla-3.2;-lexpat;-lpcre2-32;-lpng;-ljpeg;-ltiff;-ljbig;-lz;-lcurl;-lm][/home/linar/src/wxWidgets-3.2.8/buildgtk/lib/wx/include/gtk3-unicode-static-3.2;/home/linar/src/wxWidgets-3.2.8/include][v3.2.8()]
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 

@@ -73,15 +73,15 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: CMakeFiles/StackTrace.dir/flags.make
 CMakeFiles/StackTrace.dir/StackTrace.cpp.o: /home/linar/projects/test2/StackTrace.cpp
 CMakeFiles/StackTrace.dir/StackTrace.cpp.o: CMakeFiles/StackTrace.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/linar/projects/test2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/StackTrace.dir/StackTrace.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StackTrace.dir/StackTrace.cpp.o -MF CMakeFiles/StackTrace.dir/StackTrace.cpp.o.d -o CMakeFiles/StackTrace.dir/StackTrace.cpp.o -c /home/linar/projects/test2/StackTrace.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StackTrace.dir/StackTrace.cpp.o -MF CMakeFiles/StackTrace.dir/StackTrace.cpp.o.d -o CMakeFiles/StackTrace.dir/StackTrace.cpp.o -c /home/linar/projects/test2/StackTrace.cpp
 
 CMakeFiles/StackTrace.dir/StackTrace.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/StackTrace.dir/StackTrace.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linar/projects/test2/StackTrace.cpp > CMakeFiles/StackTrace.dir/StackTrace.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/linar/projects/test2/StackTrace.cpp > CMakeFiles/StackTrace.dir/StackTrace.cpp.i
 
 CMakeFiles/StackTrace.dir/StackTrace.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StackTrace.dir/StackTrace.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linar/projects/test2/StackTrace.cpp -o CMakeFiles/StackTrace.dir/StackTrace.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/linar/projects/test2/StackTrace.cpp -o CMakeFiles/StackTrace.dir/StackTrace.cpp.s
 
 # Object files for target StackTrace
 StackTrace_OBJECTS = \
@@ -92,6 +92,8 @@ StackTrace_EXTERNAL_OBJECTS =
 
 StackTrace: CMakeFiles/StackTrace.dir/StackTrace.cpp.o
 StackTrace: CMakeFiles/StackTrace.dir/build.make
+StackTrace: /home/linar/src/wxWidgets-3.2.8/buildgtk/lib/libwx_gtk3u_core-3.2.a
+StackTrace: /home/linar/src/wxWidgets-3.2.8/buildgtk/lib/libwx_baseu-3.2.a
 StackTrace: CMakeFiles/StackTrace.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/linar/projects/test2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable StackTrace"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/StackTrace.dir/link.txt --verbose=$(VERBOSE)

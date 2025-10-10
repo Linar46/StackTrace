@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/linar/projects/test2/build",
-  "command": "/usr/bin/g++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -DwxDEBUG_LEVEL=2 -isystem /usr/lib/x86_64-linux-gnu/wx/include/gtk3-unicode-3.2 -isystem /usr/include/wx-3.2  -pthread -g -std=gnu++17 -g -O0 -rdynamic -o CMakeFiles/StackTrace.dir/StackTrace.cpp.o -c /home/linar/projects/test2/StackTrace.cpp",
-  "file": "/home/linar/projects/test2/StackTrace.cpp",
-  "output": "CMakeFiles/StackTrace.dir/StackTrace.cpp.o"
-}
-]

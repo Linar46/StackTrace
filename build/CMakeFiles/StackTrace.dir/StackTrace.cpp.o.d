@@ -1,14 +1,20 @@
 CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /home/linar/projects/test2/StackTrace.cpp /usr/include/stdc-predef.h \
- /usr/include/wx-3.2/wx/crt.h /usr/include/wx-3.2/wx/defs.h \
- /usr/include/wx-3.2/wx/platform.h /usr/include/wx-3.2/wx/compiler.h \
- /usr/lib/x86_64-linux-gnu/wx/include/gtk3-unicode-3.2/wx/setup.h \
- /usr/include/wx-3.2/wx/chkconf.h /usr/include/wx-3.2/wx/gtk/chkconf.h \
- /usr/include/wx-3.2/wx/unix/chkconf.h /usr/include/wx-3.2/wx/version.h \
- /usr/include/wx-3.2/wx/cpp.h /usr/include/wx-3.2/wx/dlimpexp.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/crt.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/defs.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/platform.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/compiler.h \
+ /home/linar/src/wxWidgets-3.2.8/buildgtk/lib/wx/include/gtk3-unicode-static-3.2/wx/setup.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/chkconf.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/gtk/chkconf.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/unix/chkconf.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/version.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/cpp.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/dlimpexp.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
- /usr/include/wx-3.2/wx/types.h /usr/include/x86_64-linux-gnu/sys/types.h \
- /usr/include/features.h /usr/include/features-time64.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/types.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
+ /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -39,7 +45,7 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/wx-3.2/wx/debug.h /usr/include/assert.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/debug.h /usr/include/assert.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
  /usr/include/limits.h \
@@ -51,8 +57,8 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /usr/include/wx-3.2/wx/chartype.h /usr/include/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/chartype.h \
+ /usr/include/wchar.h /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
@@ -63,9 +69,10 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/wx-3.2/wx/features.h /usr/include/wx-3.2/wx/wxcrt.h \
- /usr/include/wx-3.2/wx/wxcrtbase.h /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/features.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/wxcrt.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/wxcrtbase.h \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
@@ -76,8 +83,8 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/wx-3.2/wx/string.h /usr/include/c++/13/stdlib.h \
- /usr/include/c++/13/cstdlib \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/string.h \
+ /usr/include/c++/13/stdlib.h /usr/include/c++/13/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
@@ -85,10 +92,14 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/13/bits/std_abs.h /usr/include/wx-3.2/wx/strvararg.h \
- /usr/include/wx-3.2/wx/strconv.h /usr/include/wx-3.2/wx/buffer.h \
- /usr/include/wx-3.2/wx/fontenc.h /usr/include/wx-3.2/wx/unichar.h \
- /usr/include/wx-3.2/wx/stringimpl.h /usr/include/wx-3.2/wx/beforestd.h \
+ /usr/include/c++/13/bits/std_abs.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/strvararg.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/strconv.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/buffer.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/fontenc.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/unichar.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/stringimpl.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/beforestd.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/memoryfwd.h \
@@ -143,15 +154,16 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /usr/include/wx-3.2/wx/afterstd.h /usr/include/c++/13/algorithm \
- /usr/include/c++/13/bits/stl_algo.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/afterstd.h \
+ /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/utility \
- /usr/include/c++/13/bits/stl_relops.h /usr/include/wx-3.2/wx/stringops.h \
+ /usr/include/c++/13/bits/stl_relops.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/stringops.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
@@ -165,8 +177,10 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/array \
- /usr/include/c++/13/compare /usr/include/wx-3.2/wx/iosfwrap.h \
- /usr/include/wx-3.2/wx/wxcrtvararg.h /usr/include/wx-3.2/wx/init.h \
+ /usr/include/c++/13/compare \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/iosfwrap.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/wxcrtvararg.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/init.h \
  /home/linar/projects/test2/StackTrace.h \
- /usr/include/wx-3.2/wx/stackwalk.h \
- /usr/include/wx-3.2/wx/unix/stackwalk.h
+ /home/linar/src/wxWidgets-3.2.8/include/wx/stackwalk.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/unix/stackwalk.h
