@@ -23,7 +23,7 @@ set(wxWidgets_CONFIG_EXECUTABLE
 
 # Find wxWidgets using the specified wx-config
 find_package(wxWidgets REQUIRED COMPONENTS core base)
-include(${wxWidgets_USE_FILE})
+include(${wxWidgets_USE_FILE}) # flags and libs
 
 # ------------------------------------------------------------------
 # Define the executable target

@@ -315,4 +315,8 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/log.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/time.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/thread.h \
+ /home/linar/src/wxWidgets-3.2.8/include/wx/generic/logg.h
