@@ -2,6 +2,7 @@
 #include <wx/init.h>
 #include "StackTrace.h"
 
+
 void method3()
 {
     wxStackTrace trace(true);
@@ -13,8 +14,9 @@ void method2() {
   method3();
 }
 
-void method1() {
+char method1() {
   method2();
+  return '5';
 }
 
 auto main()->int {

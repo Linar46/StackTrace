@@ -247,6 +247,8 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: /home/linar/projects/StackTrace/Stac
   /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/libdwarf/dwarf.h \
+  /usr/include/libdwarf/libdwarf.h \
   /usr/include/limits.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
@@ -566,6 +568,12 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: /home/linar/projects/StackTrace/Stac
 /usr/include/sched.h:
 
 /usr/include/pthread.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/math.h:
+
+/usr/include/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
@@ -893,15 +901,9 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: /home/linar/projects/StackTrace/Stac
 
 /usr/include/c++/13/ext/aligned_buffer.h:
 
-/usr/include/locale.h:
-
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/13/bits/exception_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/math.h:
 
 /home/linar/src/wxWidgets-3.2.8/include/wx/memory.h:
 
@@ -1065,6 +1067,8 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: /home/linar/projects/StackTrace/Stac
 
 /usr/include/c++/13/cxxabi.h:
 
+/usr/include/libdwarf/dwarf.h:
+
 /usr/include/c++/13/debug/assertions.h:
 
 /usr/include/c++/13/pstl/glue_memory_defs.h:
@@ -1094,6 +1098,8 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: /home/linar/projects/StackTrace/Stac
 /home/linar/src/wxWidgets-3.2.8/include/wx/platinfo.h:
 
 /usr/include/c++/13/ext/string_conversions.h:
+
+/usr/include/libdwarf/libdwarf.h:
 
 /usr/include/c++/13/ext/type_traits.h:
 

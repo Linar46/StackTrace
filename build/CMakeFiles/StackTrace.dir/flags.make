@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -DwxDEBUG_LEVEL=2
 
-CXX_INCLUDES = -isystem /home/linar/src/wxWidgets-3.2.8/buildgtk/lib/wx/include/gtk3-unicode-static-3.2 -isystem /home/linar/src/wxWidgets-3.2.8/include
+CXX_INCLUDES = -I/usr/include/libdwarf -isystem /home/linar/src/wxWidgets-3.2.8/buildgtk/lib/wx/include/gtk3-unicode-static-3.2 -isystem /home/linar/src/wxWidgets-3.2.8/include
 
-CXX_FLAGS =  -pthread -g -std=gnu++17 -g3 -gdwarf-5 -O0 -rdynamic -no-pie -fno-omit-frame-pointer
+CXX_FLAGS =  -pthread -g
 

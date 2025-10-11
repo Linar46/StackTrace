@@ -94,6 +94,12 @@ StackTrace: CMakeFiles/StackTrace.dir/StackTrace.cpp.o
 StackTrace: CMakeFiles/StackTrace.dir/build.make
 StackTrace: /home/linar/src/wxWidgets-3.2.8/buildgtk/lib/libwx_gtk3u_core-3.2.a
 StackTrace: /home/linar/src/wxWidgets-3.2.8/buildgtk/lib/libwx_baseu-3.2.a
+StackTrace: /usr/lib/x86_64-linux-gnu/libdwarf.so
+StackTrace: /usr/lib/x86_64-linux-gnu/libelf.so
+StackTrace: /home/linar/src/wxWidgets-3.2.8/buildgtk/lib/libwx_gtk3u_core-3.2.a
+StackTrace: /home/linar/src/wxWidgets-3.2.8/buildgtk/lib/libwx_baseu-3.2.a
+StackTrace: /usr/lib/x86_64-linux-gnu/libdwarf.so
+StackTrace: /usr/lib/x86_64-linux-gnu/libelf.so
 StackTrace: CMakeFiles/StackTrace.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/linar/projects/StackTrace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable StackTrace"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/StackTrace.dir/link.txt --verbose=$(VERBOSE)
