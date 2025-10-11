@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_BUILD_TYPE Debug)
 
 # Add compile options for debug info and stack tracing
-add_compile_options(-g -O0 -rdynamic -no-pie -fno-omit-frame-pointer)
+add_compile_options(-g3 -gdwarf-5 -O0 -rdynamic -no-pie -fno-omit-frame-pointer)
 add_compile_definitions(wxDEBUG_LEVEL=2)
 
 # ------------------------------------------------------------------

@@ -150,8 +150,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/linar/projects/test2/build",
-		"source" : "/home/linar/projects/test2"
+		"build" : "/home/linar/projects/StackTrace/build",
+		"source" : "/home/linar/projects/StackTrace"
 	},
 	"version" : 
 	{

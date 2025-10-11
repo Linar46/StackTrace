@@ -62,21 +62,23 @@ public:
     wxString exePath = wxStandardPaths::Get().GetExecutablePath();
     wxArrayString output;
     wxString cmd = wxString::Format(
-        "addr2line -e \"%s\" -f -p 0x%llx",
+        // "addr2line -e \"%s\" -f -p 0x%llx",
+        "llvm-symbolizer -e \"%s\" --inlining --demangle --functions --pretty-print 0x%llx", // prints clearly added for return-type
         exePath.mb_str(),
         static_cast<unsigned long long>(offset));
 
     wxExecute(cmd, output, wxEXEC_SYNC);
-    // return output.empty() ? "<unknown>" : output[0];
+
     if (output.empty())
       return "<unknown>";
 
     // Demangle possible mangled symbol in output[0]
-    return DemangleSymbol(output[0]);
+    // return DemangleSymbol(output[0]); // for addr2line
+    return wxString::FromUTF8(output[0].mb_str());
   }
 
 private:
-  static std::string TryDemangle(const std::string &name)
+  static std::string TryDemangle(const std::string &name) // for addr2line results
   {
     int status = 0;
     std::unique_ptr<char, void (*)(void *)> demangled(

@@ -1,5 +1,6 @@
 CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
- /home/linar/projects/test2/StackTrace.cpp /usr/include/stdc-predef.h \
+ /home/linar/projects/StackTrace/StackTrace.cpp \
+ /usr/include/stdc-predef.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/crt.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/defs.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/platform.h \
@@ -181,7 +182,7 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /home/linar/src/wxWidgets-3.2.8/include/wx/iosfwrap.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/wxcrtvararg.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/init.h \
- /home/linar/projects/test2/StackTrace.h \
+ /home/linar/projects/StackTrace/StackTrace.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/stackwalk.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/unix/stackwalk.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/utils.h \

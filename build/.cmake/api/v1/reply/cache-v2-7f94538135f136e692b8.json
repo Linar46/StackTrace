@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/linar/projects/test2/build"
+			"value" : "/home/linar/projects/StackTrace/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -547,7 +547,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/linar/projects/test2/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/linar/projects/StackTrace/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -607,7 +607,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/linar/projects/test2"
+			"value" : "/home/linar/projects/StackTrace"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1171,7 +1171,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/linar/projects/test2/build"
+			"value" : "/home/linar/projects/StackTrace/build"
 		},
 		{
 			"name" : "StackTrace_IS_TOP_LEVEL",
@@ -1195,7 +1195,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/linar/projects/test2"
+			"value" : "/home/linar/projects/StackTrace"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

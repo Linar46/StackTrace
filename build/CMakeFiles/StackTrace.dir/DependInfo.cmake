@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/linar/projects/test2/StackTrace.cpp" "CMakeFiles/StackTrace.dir/StackTrace.cpp.o" "gcc" "CMakeFiles/StackTrace.dir/StackTrace.cpp.o.d"
+  "/home/linar/projects/StackTrace/StackTrace.cpp" "CMakeFiles/StackTrace.dir/StackTrace.cpp.o" "gcc" "CMakeFiles/StackTrace.dir/StackTrace.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

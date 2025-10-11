@@ -93,7 +93,11 @@
 				},
 				{
 					"backtrace" : 6,
-					"fragment" : "-g"
+					"fragment" : "-g3"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-gdwarf-5"
 				},
 				{
 					"backtrace" : 6,
