@@ -319,4 +319,18 @@ CMakeFiles/StackTrace.dir/StackTrace.cpp.o: \
  /home/linar/src/wxWidgets-3.2.8/include/wx/log.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/time.h \
  /home/linar/src/wxWidgets-3.2.8/include/wx/thread.h \
- /home/linar/src/wxWidgets-3.2.8/include/wx/generic/logg.h
+ /home/linar/src/wxWidgets-3.2.8/include/wx/generic/logg.h \
+ /usr/include/c++/13/cxxabi.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/cxxabi_tweaks.h \
+ /usr/include/c++/13/memory \
+ /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr_base.h \
+ /usr/include/c++/13/bits/allocated_ptr.h \
+ /usr/include/c++/13/ext/concurrence.h \
+ /usr/include/c++/13/bits/shared_ptr_atomic.h \
+ /usr/include/c++/13/bits/atomic_base.h \
+ /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/13/backward/auto_ptr.h \
+ /usr/include/c++/13/pstl/glue_memory_defs.h

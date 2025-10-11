@@ -7,7 +7,10 @@
 #include <wx/filename.h>
 #include <wx/stdpaths.h>
 #include <cstdint>
-#include <wx/log.h> 
+#include <wx/log.h>
+#include <cxxabi.h> // for __cxa_demangle
+#include <memory>
+#include <string>
 
 class wxStackTrace final : public wxStackWalker
 {
@@ -64,16 +67,49 @@ public:
         static_cast<unsigned long long>(offset));
 
     wxExecute(cmd, output, wxEXEC_SYNC);
-    return output.empty() ? "<unknown>" : output[0];
+    // return output.empty() ? "<unknown>" : output[0];
+    if (output.empty())
+      return "<unknown>";
+
+    // Demangle possible mangled symbol in output[0]
+    return DemangleSymbol(output[0]);
   }
 
 private:
+  static std::string TryDemangle(const std::string &name)
+  {
+    int status = 0;
+    std::unique_ptr<char, void (*)(void *)> demangled(
+        abi::__cxa_demangle(name.c_str(), nullptr, nullptr, &status),
+        std::free);
+    return (status == 0 && demangled) ? demangled.get() : name;
+  }
+
+  static wxString DemangleSymbol(const wxString &line)
+  {
+    std::string text = std::string(line.mb_str());
+    auto pos = text.find(" at ");
+    if (pos != std::string::npos)
+    {
+      std::string mangled = text.substr(0, pos);
+      std::string fileInfo = text.substr(pos); // includes " at ..."
+
+      // Demangle only if it looks like a mangled C++ symbol
+      if (mangled.rfind("_Z", 0) == 0)
+        mangled = TryDemangle(mangled);
+
+      text = mangled + fileInfo;
+    }
+    else if (text.rfind("_Z", 0) == 0)
+    {
+      text = TryDemangle(text);
+    }
+
+    return wxString::FromUTF8(text.c_str());
+  }
   void OnStackFrame(const wxStackFrame &frame) override
   {
     frames.push_back(frame);
-    // wxPrintf("Captured frame %lu: %s\n", (unsigned long)frame.GetLevel(), ResolveSymbol((void *)frame.GetAddress()));
-    // wxLogMessage("Function: %s", frame.GetName());
-    // wxLogMessage("Location: %s:%d", frame.GetFileName(), frame.GetLine());
     wxLogMessage("[%lu]: %s\n", (unsigned long)frame.GetLevel(), ResolveSymbol((void *)frame.GetAddress()));
   }
 
